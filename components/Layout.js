@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
           </a>
         </Link>
       </li>
-      {!isAuth() && (
+      {process.broswer && !isAuth() && (
         <React.Fragment>
           <li className="nav-item">
             <Link href="/login">
@@ -61,7 +61,7 @@ const Layout = ({ children }) => {
           </li>
         </React.Fragment>
       )}
-      {isAuth() && isAuth().role === "admin" && (
+      {process.broswer && isAuth() && isAuth().role === "admin" && (
         <li className="nav-item ml-auto">
           <Link href="/admin">
             <a href="" className="nav-link text-dark">
