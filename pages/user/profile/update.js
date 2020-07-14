@@ -6,7 +6,7 @@ import { showSuccessMessage, showErrorMessage } from "../../../helpers/alerts";
 import { API } from "../../../config";
 import { isAuth, updateUser } from "../../../helpers/auth";
 import withUser from "../../withUser";
-import { update } from "../../../../server/models/user";
+// import { update } from "../../../../server/models/user";
 
 const Profile = ({ user, token }) => {
   const [state, setState] = useState({
